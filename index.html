@@ -106,15 +106,41 @@
 <body>
 
   <div class="form-container">
-    <h2>Punten werkoverleg 9 juni 2026</h2>
+    <h2>Aanleveren punten werkoverleg 9 juni 2026</h2>
 
     <form
       action="https://formspree.io/f/xredznjw"
       method="POST"
     >
       <label>
+        Your name:
+        <input type="text" name="name" placeholder="Enter your name">
+      </label>
+
+      <!-- Keuze naam of anoniem -->
+      <div class="radio-group">
+        <strong>Show name?</strong><br><br>
+
+        <label>
+          <input type="radio" name="visibility" value="Name" checked>
+          Naam
+        </label>
+        
+        <label>
+          <input type="radio" name="visibility" value="Anonymous">
+          Anoniem
+        </label>
+      </div>
+      
+      <label>
         Your email:
-        <input type="email" name="email" placeholder="Enter your email" required>
+        <input 
+          type="email" 
+          name="email" 
+          value="test@test.nl"
+          placeholder="Enter your email" 
+          required
+        >
       </label>
 
       <label>
